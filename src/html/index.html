@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Voting Page</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <style>
+      #timer-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px;
+        background: #f44336;
+        color: white;
+        border-radius: 5px;
+        font-size: 18px;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="head" class="text-center">
+      <h1 align="center">Secure E-Voting Using Blockchain</h1>
+      <h2 align="center">Welcome for Voting</h2> 
+      <h3 align="center"><p>Voting Dates: <span id="dates"></span></p></h3>
+      <h3 align="center"><p>Vote Within: <span id="timer-display">15s</span></p></h3>
+      <br/> 
+    </div>
+    <div id="candidate" class="container"> 
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Party</th>
+            <th>Total Vote</th>
+            <th>Select</th>
+          </tr>
+        </thead>
+        <tbody id="boxCandidate"></tbody>
+      </table>
+      <br/>
+      <div id="vote">
+        <p>Please select one of the candidates and click the vote button.</p>
+        <button id="voteButton" class="btn btn-primary">Vote</button>
+        <div id="msg"></div>
+        <div id="vote-box"></div>
+      </div>
+    </div>
+    <div id="account">
+          <p id="accountAddress" class="text-center"></p>
+    </div>
+      <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@truffle/contract@4.3.19/dist/truffle-contract.min.js"></script>
+      <script src="../dist/app.bundle.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    
+    <!-- Add before the closing body tag -->
+    <script type="module">
+      import VoteTimer from '../js/voteTimer.js';
+      
+      document.addEventListener('DOMContentLoaded', () => {
+        const voteTimer = new VoteTimer();
+        voteTimer.initializeTimer();
+      });
+    </script>
+  </body>
+</html>

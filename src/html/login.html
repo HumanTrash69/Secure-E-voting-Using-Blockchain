@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="../css/login.css">
+  <!-- Remove old face-api.js as we're using OpenCV now -->
+  <!-- Remove old faceAuth.js as we're using new verification -->
+  <!-- Remove the old script import -->
+  <!-- <script type="module" src="../js/faceVerification.js"></script> -->
+</head>
+<body>
+  <h1 align="center" style="color: azure;">Secure E-Voting Using Blockchain</h1>
+  <div class="container mt-5">
+    <h1>Login</h1>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="voter-id"><h3>Voter ID</h3></label>
+        <input type="text" class="form-control" id="voter-id" name="voter-id" placeholder="Voter id">
+      </div>
+      <div class="form-group">
+        <label for="password"><h3>Password</h3></label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+      </div>
+      <div id="error"></div>
+      <button type="submit" class="btn btn-primary"><b>Login</b></button>
+    </form>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <!-- Add login.js first as it imports faceVerification.js -->
+  <script type="module" src="/js/login.js"></script>
+</body>
+</html>

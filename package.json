@@ -1,0 +1,24 @@
+{
+  "name": "secure-e-voting-using-blockchain",
+  "version": "1.0.0",
+  "description": "A blockchain-based secure electronic voting system with face verification",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "browserify src/js/app.js -o src/dist/app.bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/contract": "^4.6.18",
+    "browserify": "^17.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "web3": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
