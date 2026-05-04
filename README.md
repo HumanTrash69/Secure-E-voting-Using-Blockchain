@@ -3,10 +3,8 @@
 This project was developed during a 24-hour Codathon organized at Dronacharya Group of Institutions.
 
 ## Project Contributors
-1. <a href="https://github.com/humantrash69">
-  <img src="[https://github.com/friend-username.png](https://avatars.githubusercontent.com/u/131573593?v=4)" width="50" style="border-radius:50%;" />
-</a> [Ayush Jain](https://github.com/IkemenSenpai/)
-2. [Himanshu Verma](https://github.com/username)
+1. [Ayush Jain](https://github.com/humantrash69/)
+2. [Himanshu Verma](https://github.com/harryV36)
 3. [Vivek Chaurasiya](https://github.com/username)
 
 ## About The Project
