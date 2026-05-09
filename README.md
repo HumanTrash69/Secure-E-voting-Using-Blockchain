@@ -1,4 +1,8 @@
 # Secure E-Voting Using Blockchain
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Node](https://img.shields.io/badge/node-%3E%3D14-green)
+![Solidity](https://img.shields.io/badge/solidity-0.8.x-lightgrey)
+![Built at Hackathon](https://img.shields.io/badge/built%20at-Codathon%2024hr-orange)
 
 This project was developed during a 24-hour Codathon organized at Dronacharya Group of Institutions.
 
